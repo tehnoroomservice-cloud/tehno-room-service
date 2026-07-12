@@ -255,3 +255,13 @@ h1 {
     display: block;
     margin: 0 auto 20px;
 }
+.info-box {
+    margin: 30px auto;
+    padding: 20px;
+    max-width: 450px;
+    background: rgba(0,0,0,0.7);
+    border: 1px solid #ffd400;
+    border-radius: 15px;
+    font-size: 20px;
+    line-height: 1.8;
+}
