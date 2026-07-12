@@ -120,8 +120,11 @@ section {
 }
 .main-image {
     width: 100%;
-    max-width: 800px;
+    max-width: 900px;
+    height: 350px;
+    object-fit: cover;
     border-radius: 20px;
     margin: 30px auto;
     display: block;
+}
 }
