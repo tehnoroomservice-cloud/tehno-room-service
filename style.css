@@ -249,10 +249,9 @@ h1 {
     margin:80px auto;
 
 }
-
-
-}
 .logo-img {
-    width: 180px;
-    max-width: 100%;
+    width: 220px;
+    height: auto;
+    display: block;
+    margin: 0 auto 20px;
 }
