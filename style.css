@@ -118,3 +118,10 @@ section {
 }
 
 }
+.main-image {
+    width: 100%;
+    max-width: 800px;
+    border-radius: 20px;
+    margin: 30px auto;
+    display: block;
+}
