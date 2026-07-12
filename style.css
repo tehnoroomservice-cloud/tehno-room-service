@@ -5,84 +5,116 @@
 body {
     margin: 0;
     font-family: Arial, sans-serif;
-    background: #111;
+    background: #0b0b0b;
     color: white;
-    line-height: 1.6;
 }
 
-header {
-    background: linear-gradient(135deg, #000, #222);
+.hero {
     text-align: center;
-    padding: 50px 20px;
-    border-bottom: 4px solid #ffd400;
+    padding: 70px 20px;
+    background: linear-gradient(135deg, #000, #222);
+    border-bottom: 3px solid #ffd400;
 }
 
-header h1 {
-    font-size: 42px;
+.logo {
+    font-size: 38px;
+    font-weight: bold;
     color: #ffd400;
-    margin-bottom: 10px;
+    line-height: 1;
 }
 
-header p {
-    font-size: 22px;
+.logo span {
+    color: white;
+    font-size: 25px;
 }
 
-a {
+h1 {
+    font-size: 42px;
+    margin-top: 30px;
+}
+
+.hero p {
+    font-size: 20px;
+    color: #ddd;
+}
+
+.buttons a {
     display: inline-block;
-    margin: 15px 5px;
-    padding: 14px 25px;
+    margin: 20px 8px;
+    padding: 15px 30px;
+    border-radius: 8px;
     background: #ffd400;
-    color: #000;
+    color: black;
     text-decoration: none;
     font-weight: bold;
-    border-radius: 8px;
 }
 
-section {
-    max-width: 900px;
-    margin: 30px auto;
-    padding: 25px;
-    background: #1c1c1c;
-    border-radius: 15px;
+.buttons a:last-child {
+    background: #25D366;
+    color: white;
 }
 
-h2 {
+.guarantee {
+    margin-top: 25px;
+    font-size: 22px;
     color: #ffd400;
 }
 
-ul {
-    list-style: none;
-    padding: 0;
+
+section {
+    max-width: 1000px;
+    margin: 40px auto;
+    padding: 30px;
 }
 
-li {
-    background: #000;
-    margin: 10px 0;
-    padding: 12px;
-    border-left: 5px solid #ffd400;
-    border-radius: 5px;
+
+h2 {
+    text-align: center;
+    color: #ffd400;
+    font-size: 32px;
 }
+
+
+.cards {
+    display: grid;
+    grid-template-columns: repeat(auto-fit,minmax(220px,1fr));
+    gap: 20px;
+}
+
+
+.cards div {
+    background: #191919;
+    padding: 25px;
+    border-radius: 15px;
+    border: 1px solid #333;
+}
+
+
+.cards h3 {
+    color: #ffd400;
+}
+
 
 footer {
     text-align: center;
-    padding: 25px;
-    background: #000;
-    color: #aaa;
+    padding: 30px;
+    background: black;
+    color: #888;
 }
 
 
 @media(max-width:600px){
 
-    header h1 {
-        font-size: 30px;
-    }
-
-    section {
-        margin: 15px;
-    }
-
+h1 {
+    font-size: 30px;
 }
+
 .logo {
-    width: 180px;
-    margin-bottom: 20px;
+    font-size: 30px;
+}
+
+section {
+    padding: 20px;
+}
+
 }
