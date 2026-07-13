@@ -1,19 +1,693 @@
-*{
-    margin:0;
-    padding:0;
-    box-sizing:border-box;
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
 }
 
-html{
-    scroll-behavior:smooth;
+
+html {
+    scroll-behavior: smooth;
 }
 
-body{
-    font-family:'Montserrat',sans-serif;
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background: #0b0b0b;
+    color: #ffffff;
+}
+
+
+.container {
+    width: 90%;
+    max-width: 1200px;
+    margin: auto;
+}
+
+
+
+/* ===== HERO ===== */
+
+
+.hero {
+
+    min-height: 850px;
+
+    position: relative;
+
+    display: flex;
+
+    align-items: center;
+
+    background-image:
+    linear-gradient(
+    rgba(0,0,0,0.75),
+    rgba(0,0,0,0.85)
+    ),
+    url("images/banner.jpg");
+
+    background-size: cover;
+
+    background-position: center;
+
+}
+
+
+.overlay {
+
+    position:absolute;
+
+    inset:0;
+
+}
+
+
+
+nav {
+
+    position:absolute;
+
+    top:30px;
+
+    left:0;
+
+    right:0;
+
+    width:90%;
+
+    max-width:1200px;
+
+    margin:auto;
+
+    display:flex;
+
+    justify-content:space-between;
+
+    align-items:center;
+
+}
+
+
+
+.logo img {
+
+    width:180px;
+
+}
+
+
+
+.phone a {
+
+    color:white;
+
+    text-decoration:none;
+
+    font-size:20px;
+
+    font-weight:bold;
+
+}
+
+
+
+.hero-content {
+
+    position:relative;
+
+    max-width:800px;
+
+    margin-top:80px;
+
+}
+
+
+
+.hero-content h1 {
+
+    font-size:55px;
+
+    line-height:1.15;
+
+    margin-bottom:25px;
+
+}
+
+
+
+.hero-content h1 span {
+
+    color:#ffd400;
+
+}
+
+
+
+.hero-content p {
+
+    font-size:22px;
+
+    line-height:1.5;
+
+    color:#dddddd;
+
+}
+
+
+
+.hero-buttons {
+
+    margin-top:35px;
+
+}
+
+
+
+.btn-yellow,
+.btn-green {
+
+    display:inline-block;
+
+    padding:16px 35px;
+
+    border-radius:10px;
+
+    margin-right:15px;
+
+    text-decoration:none;
+
+    font-size:18px;
+
+    font-weight:bold;
+
+}
+
+
+
+.btn-yellow {
+
+    background:#ffd400;
+
+    color:#000;
+
+}
+
+
+.btn-green {
+
+    background:#25D366;
+
+    color:white;
+
+}
+/* ===== INFO BOX ===== */
+
+
+.hero-box {
+
+    margin-top:40px;
+
+    padding:25px;
+
+    background:rgba(0,0,0,0.6);
+
+    border-left:4px solid #ffd400;
+
+    border-radius:12px;
+
+    font-size:18px;
+
+    line-height:2;
+
+}
+
+
+
+/* ===== TITLES ===== */
+
+
+h2 {
+
+    text-align:center;
+
+    font-size:40px;
+
+    color:#ffd400;
+
+    margin-bottom:20px;
+
+}
+
+
+.subtitle {
+
+    text-align:center;
+
+    color:#ccc;
+
+    font-size:20px;
+
+    margin-bottom:40px;
+
+}
+
+
+
+/* ===== SERVICES ===== */
+
+
+.services {
+
+    padding:80px 0;
+
+}
+
+
+
+.cards {
+
+    display:grid;
+
+    grid-template-columns:repeat(3,1fr);
+
+    gap:25px;
+
+}
+
+
+
+.service-card {
+
+    background:#161616;
+
+    border-radius:18px;
+
+    overflow:hidden;
+
+    border:1px solid #333;
+
+    transition:0.3s;
+
+}
+
+
+
+.service-card:hover {
+
+    transform:translateY(-8px);
+
+    border-color:#ffd400;
+
+}
+
+
+
+.service-card img {
+
+    width:100%;
+
+    height:220px;
+
+    object-fit:cover;
+
+}
+
+
+
+.service-card h3 {
+
+    color:#ffd400;
+
+    font-size:24px;
+
+    padding:20px 20px 10px;
+
+}
+
+
+
+.service-card p {
+
+    padding:0 20px 25px;
+
+    color:#ccc;
+
+    line-height:1.5;
+
+}
+
+
+
+/* ===== ADVANTAGES ===== */
+
+
+.advantages {
+
     background:#111;
-    color:#fff;
-    line-height:1.6;
+
+    padding:80px 0;
+
 }
 
-.container{
-   
+
+
+.advantages-grid {
+
+    display:grid;
+
+    grid-template-columns:repeat(4,1fr);
+
+    gap:20px;
+
+}
+
+
+
+.advantages-grid div {
+
+    background:#181818;
+
+    padding:25px;
+
+    border-radius:15px;
+
+    text-align:center;
+
+}
+
+
+
+.advantages-grid h3 {
+
+    color:#ffd400;
+
+    margin-bottom:15px;
+
+}
+
+
+
+.advantages-grid p {
+
+    color:#ddd;
+
+}
+
+
+
+/* ===== STEPS ===== */
+
+
+.steps {
+
+    padding:80px 0;
+
+}
+
+
+
+.step-list {
+
+    display:grid;
+
+    grid-template-columns:repeat(4,1fr);
+
+    gap:20px;
+
+}
+
+
+
+.step-list div {
+
+    background:#161616;
+
+    padding:25px;
+
+    border-radius:15px;
+
+    text-align:center;
+
+}
+
+
+
+.step-list span {
+
+    display:block;
+
+    width:45px;
+
+    height:45px;
+
+    line-height:45px;
+
+    margin:0 auto 15px;
+
+    background:#ffd400;
+
+    color:#000;
+
+    border-radius:50%;
+
+    font-weight:bold;
+
+    font-size:22px;
+
+}
+/* ===== CONTACT ===== */
+
+
+.contact {
+
+    padding:80px 0;
+
+    text-align:center;
+
+}
+
+
+
+.contact-box {
+
+    margin:40px auto;
+
+    max-width:600px;
+
+    background:#161616;
+
+    padding:30px;
+
+    border-radius:18px;
+
+    border:1px solid #333;
+
+}
+
+
+
+.contact-box p {
+
+    margin:15px 0;
+
+    font-size:20px;
+
+}
+
+
+
+.contact-box a {
+
+    color:#ffd400;
+
+    text-decoration:none;
+
+}
+
+
+
+.main-button {
+
+    display:inline-block;
+
+    padding:18px 40px;
+
+    background:#ffd400;
+
+    color:#000;
+
+    text-decoration:none;
+
+    font-size:20px;
+
+    font-weight:bold;
+
+    border-radius:12px;
+
+}
+
+
+
+/* ===== FOOTER ===== */
+
+
+footer {
+
+    background:#000;
+
+    padding:30px 0;
+
+    text-align:center;
+
+    color:#888;
+
+}
+
+
+
+footer p {
+
+    margin:8px;
+
+}
+
+
+
+/* ===== MOBILE ===== */
+
+
+@media(max-width:900px) {
+
+
+.hero {
+
+    min-height:750px;
+
+}
+
+
+
+.hero-content h1 {
+
+    font-size:38px;
+
+}
+
+
+
+.cards {
+
+    grid-template-columns:repeat(2,1fr);
+
+}
+
+
+
+.advantages-grid {
+
+    grid-template-columns:repeat(2,1fr);
+
+}
+
+
+
+.step-list {
+
+    grid-template-columns:repeat(2,1fr);
+
+}
+
+
+}
+
+
+
+@media(max-width:600px) {
+
+
+nav {
+
+    flex-direction:column;
+
+    gap:20px;
+
+}
+
+
+
+.logo img {
+
+    width:150px;
+
+}
+
+
+
+.hero-content {
+
+    text-align:center;
+
+}
+
+
+
+.hero-content h1 {
+
+    font-size:30px;
+
+}
+
+
+
+.hero-content p {
+
+    font-size:18px;
+
+}
+
+
+
+.btn-yellow,
+.btn-green {
+
+    display:block;
+
+    margin:15px auto;
+
+    width:90%;
+
+}
+
+
+
+.cards {
+
+    grid-template-columns:1fr;
+
+}
+
+
+
+.advantages-grid {
+
+    grid-template-columns:1fr;
+
+}
+
+
+
+.step-list {
+
+    grid-template-columns:1fr;
+
+}
+
+
+
+h2 {
+
+    font-size:32px;
+
+}
+
+
+}
