@@ -691,3 +691,192 @@ h2 {
 
 
 }
+/* ===== FINAL DESIGN UPGRADE ===== */
+
+.hero-content {
+    animation: heroAppear 0.8s ease-out;
+}
+
+@keyframes heroAppear {
+    from {
+        opacity: 0;
+        transform: translateY(25px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+
+/* ===== BUTTONS ===== */
+
+.btn-yellow,
+.btn-green,
+.main-button {
+    transition: transform 0.25s ease, box-shadow 0.25s ease;
+}
+
+.btn-yellow:hover,
+.main-button:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 10px 25px rgba(255, 212, 0, 0.25);
+}
+
+.btn-green:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 10px 25px rgba(37, 211, 102, 0.25);
+}
+
+
+/* ===== HERO INFO ===== */
+
+.hero-box {
+    backdrop-filter: blur(6px);
+    border: 1px solid rgba(255, 212, 0, 0.25);
+    box-shadow: 0 15px 40px rgba(0, 0, 0, 0.35);
+}
+
+
+/* ===== SECTION HEADINGS ===== */
+
+h2 {
+    position: relative;
+    padding-bottom: 18px;
+}
+
+h2::after {
+    content: "";
+    display: block;
+    width: 60px;
+    height: 3px;
+    background: #ffd400;
+    margin: 15px auto 0;
+    border-radius: 10px;
+}
+
+
+/* ===== SERVICE CARDS ===== */
+
+.service-card {
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.25);
+}
+
+.service-card img {
+    display: block;
+    transition: transform 0.4s ease;
+}
+
+.service-card:hover img {
+    transform: scale(1.04);
+}
+
+
+/* ===== ADVANTAGES ===== */
+
+.advantages-grid div {
+    border: 1px solid transparent;
+    transition: 0.3s ease;
+}
+
+.advantages-grid div:hover {
+    border-color: #ffd400;
+    transform: translateY(-5px);
+}
+
+
+/* ===== WORK STEPS ===== */
+
+.step-list div {
+    border: 1px solid #292929;
+    transition: 0.3s ease;
+}
+
+.step-list div:hover {
+    border-color: #ffd400;
+    transform: translateY(-5px);
+}
+
+
+/* ===== CONTACT ===== */
+
+.contact {
+    background:
+        linear-gradient(
+            rgba(0, 0, 0, 0.92),
+            rgba(0, 0, 0, 0.92)
+        );
+}
+
+.contact-box {
+    box-shadow: 0 15px 40px rgba(0, 0, 0, 0.35);
+}
+
+
+/* ===== MOBILE CALL BUTTON ===== */
+
+.mobile-call {
+    display: none;
+}
+
+
+@media (max-width: 600px) {
+
+    .hero {
+        min-height: 780px;
+    }
+
+    .hero-content {
+        margin-top: 120px;
+    }
+
+    .hero-content h1 {
+        font-size: 32px;
+    }
+
+    .hero-box {
+        font-size: 16px;
+        text-align: left;
+    }
+
+    .service-card {
+        border-radius: 14px;
+    }
+
+    .service-card img {
+        height: 210px;
+    }
+
+    .contact-box p {
+        font-size: 18px;
+    }
+
+    footer {
+        padding-bottom: 85px;
+    }
+
+    .mobile-call {
+        display: block;
+        position: fixed;
+        left: 15px;
+        right: 15px;
+        bottom: 15px;
+        z-index: 9999;
+
+        background: #ffd400;
+        color: #000;
+
+        text-align: center;
+        text-decoration: none;
+
+        padding: 15px;
+        border-radius: 12px;
+
+        font-size: 18px;
+        font-weight: bold;
+
+        box-shadow: 0 8px 25px rgba(0, 0, 0, 0.5);
+    }
+
+        }
