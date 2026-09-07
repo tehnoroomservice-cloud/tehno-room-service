@@ -988,3 +988,30 @@ h2::after {
         font-size: 19px;
     }
 }
+/* ===== PREMIUM ADVANTAGES ===== */
+
+.advantage {
+    background: #151515;
+    border: 1px solid rgba(255, 212, 0, 0.12);
+    border-radius: 18px;
+    padding: 28px 20px;
+    text-align: center;
+    transition: 0.3s ease;
+}
+
+.advantage:hover {
+    transform: translateY(-6px);
+    border-color: #ffd400;
+    box-shadow: 0 12px 30px rgba(0, 0, 0, 0.5);
+}
+
+.advantage h3 {
+    color: #ffd400;
+    margin-bottom: 10px;
+    font-size: 20px;
+}
+
+.advantage p {
+    color: #ccc;
+    line-height: 1.6;
+}
