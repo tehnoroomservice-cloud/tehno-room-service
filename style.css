@@ -456,13 +456,3 @@ footer {
         gap: 10px;
     }
 }
-.map {
-    margin: 35px 0;
-    border-radius: 12px;
-    overflow: hidden;
-    border: 1px solid #333;
-}
-
-.map iframe {
-    display: block;
-}
