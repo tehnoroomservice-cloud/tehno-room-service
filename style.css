@@ -1437,3 +1437,28 @@ nav a:hover {
     }
 
 }
+/* ===== FINAL HERO FIX ===== */
+
+.hero-logo {
+    display: block !important;
+    text-align: center;
+    margin-bottom: 35px;
+}
+
+.hero-logo img {
+    width: 220px;
+    max-width: 80%;
+    height: auto;
+    display: inline-block;
+}
+
+@media (max-width: 600px) {
+    .hero-logo {
+        display: block !important;
+        margin-bottom: 30px;
+    }
+
+    .hero-logo img {
+        width: 190px;
+    }
+}
