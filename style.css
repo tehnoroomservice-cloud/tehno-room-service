@@ -124,3 +124,155 @@
     }
 
 }
+/* ===== МОБИЛЬНАЯ ВЕРСИЯ КАК ПК — ФИНАЛ ===== */
+
+@media (max-width: 600px) {
+
+    /* Общая ширина */
+    .container {
+        width: 92%;
+        max-width: 1200px;
+    }
+
+    /* ===== HERO ===== */
+
+    .hero {
+        min-height: 680px !important;
+        padding: 60px 0 !important;
+        display: flex !important;
+        align-items: center !important;
+    }
+
+    .hero-content {
+        width: 100%;
+        max-width: 850px !important;
+        margin: 0 auto !important;
+        text-align: center !important;
+    }
+
+    .hero-logo {
+        display: block !important;
+        margin-bottom: 30px !important;
+    }
+
+    .hero-logo img {
+        width: 190px !important;
+        max-width: 80% !important;
+    }
+
+    .hero-text h1,
+    .hero-content h1 {
+        font-size: 36px !important;
+        line-height: 1.1 !important;
+        margin-bottom: 22px !important;
+    }
+
+    .hero-text h1 span,
+    .hero-content h1 span {
+        display: block !important;
+        font-size: 34px !important;
+    }
+
+    .hero-text p,
+    .hero-content p {
+        font-size: 17px !important;
+        line-height: 1.5 !important;
+        max-width: 700px !important;
+        margin: 0 auto 30px !important;
+    }
+
+    /* ===== КНОПКИ ===== */
+
+    .hero-buttons {
+        display: flex !important;
+        flex-direction: row !important;
+        justify-content: center !important;
+        gap: 12px !important;
+        flex-wrap: wrap !important;
+    }
+
+    .hero-buttons a {
+        width: auto !important;
+        min-width: 200px !important;
+        padding: 15px 20px !important;
+        font-size: 17px !important;
+        margin: 0 !important;
+    }
+
+    /* ===== ПРЕИМУЩЕСТВА ===== */
+
+    .hero-benefits {
+        display: flex !important;
+        flex-direction: row !important;
+        justify-content: center !important;
+        gap: 20px !important;
+        flex-wrap: wrap !important;
+        margin-top: 30px !important;
+    }
+
+    .hero-benefits div {
+        width: auto !important;
+        text-align: center !important;
+    }
+
+    /* ===== УСЛУГИ ===== */
+
+    .services {
+        padding: 60px 0 !important;
+    }
+
+    .services h2,
+    h2 {
+        font-size: 32px !important;
+    }
+
+    .subtitle {
+        font-size: 17px !important;
+        margin-bottom: 30px !important;
+    }
+
+    /* ВАЖНО: у тебя класс именно .cards */
+    .cards {
+        display: grid !important;
+        grid-template-columns: repeat(3, 1fr) !important;
+        gap: 10px !important;
+    }
+
+    .service-card {
+        min-width: 0 !important;
+        border-radius: 12px !important;
+    }
+
+    .service-card img {
+        width: 100% !important;
+        height: 120px !important;
+        object-fit: cover !important;
+    }
+
+    .service-card h3 {
+        font-size: 14px !important;
+        line-height: 1.25 !important;
+        padding: 12px 10px 8px !important;
+    }
+
+    .service-card p {
+        font-size: 12px !important;
+        line-height: 1.4 !important;
+        padding: 0 10px 15px !important;
+    }
+
+    /* ===== ПРЕИМУЩЕСТВА ===== */
+
+    .advantages-grid {
+        grid-template-columns: repeat(2, 1fr) !important;
+        gap: 12px !important;
+    }
+
+    /* ===== ЭТАПЫ ===== */
+
+    .step-list {
+        grid-template-columns: repeat(2, 1fr) !important;
+        gap: 12px !important;
+    }
+
+}
