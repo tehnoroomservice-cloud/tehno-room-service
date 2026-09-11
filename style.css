@@ -1462,3 +1462,24 @@ nav a:hover {
         width: 190px;
     }
 }
+/* ===== FIX EMPTY SPACE ON MOBILE ===== */
+
+@media (max-width: 600px) {
+    .hero {
+        min-height: auto !important;
+        height: auto !important;
+        padding: 40px 20px 50px !important;
+    }
+
+    .hero-content {
+        min-height: auto !important;
+    }
+
+    .hero-benefits {
+        margin-bottom: 20px !important;
+    }
+
+    .services {
+        padding-top: 60px !important;
+    }
+}
