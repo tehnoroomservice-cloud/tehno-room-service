@@ -1,406 +1,174 @@
 <!DOCTYPE html>
 <html lang="ru">
-
 <head>
-
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-<title>TEHNO ROOM SERVICE | Ремонт бытовой техники в Кишинёве</title>
-
-<meta name="description" content="Ремонт крупной бытовой техники в Кишинёве и области с выездом мастера на дом. Стиральные машины, посудомоечные машины, сушильные машины, духовки, варочные панели, бойлеры. Гарантия до 2 лет.">
-
-<meta name="keywords" content="ремонт бытовой техники Кишинёв, ремонт стиральных машин Кишинёв, ремонт посудомоечных машин Кишинёв, ремонт сушильных машин Кишинёв, ремонт духовок Кишинёв, ремонт варочных панелей Кишинёв, ремонт бойлеров Кишинёв, мастер по ремонту бытовой техники, ремонт бытовой техники с выездом">
-
-<link rel="stylesheet" href="style.css?v=2">
-    
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tehno Room Service — Ремонт крупной бытовой техники в Кишинёве</title>
+    <!-- Подключение стилей и шрифта Montserrat -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700;800;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
 </head>
-
 <body>
 
-<header class="hero">
-
-<div class="overlay"></div>
-
-<div class="container">
-
-<nav>
-
-<div class="logo">
-
-<img src="images/logo.png" alt="TEHNO ROOM SERVICE">
-
-</div>
-
-<div class="phone">
-
-<a href="tel:+37360114478">
-
-
-</a>
-
-</div>
-
-</nav>
-
-<!-- ===== PREMIUM HERO ===== -->
-
-<section class="hero">
-
-    <div class="container">
-
-        <div class="hero-content">
-
-            <div class="hero-logo">
-                <img src="images/logo.png" alt="TEHNO ROOM SERVICE">
+    <!-- ШАПКА / НАВИГАЦИЯ -->
+    <header class="header">
+        <div class="container nav-container">
+            <div class="logo">
+                <svg class="logo-icon" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M12 15C13.6569 15 15 13.6569 15 12C15 10.3431 13.6569 9 12 9C10.3431 9 9 10.3431 9 12C9 13.6569 10.3431 15 12 15Z" fill="#FFD400"/>
+                    <path d="M19.4 13C19.45 12.67 19.5 12.34 19.5 12C19.5 11.66 19.45 11.33 19.4 11L21.54 9.33C21.73 9.18 21.78 8.91 21.66 8.69L19.52 4.98C19.4 4.76 19.13 4.67 18.9 4.76L16.38 5.77C15.86 5.37 15.29 5.04 14.67 4.78L14.29 2.1C14.25 1.86 14.05 1.68 13.8 1.68H9.52C9.28 1.68 9.07 1.86 9.04 2.1L8.66 4.78C8.04 5.04 7.47 5.38 6.95 5.77L4.43 4.76C4.2 4.67 3.93 4.76 3.81 4.98L1.67 8.69C1.55 8.91 1.6 9.18 1.79 9.33L3.93 11C3.88 11.33 3.83 11.67 3.83 12C3.83 12.33 3.88 12.67 3.93 13L1.79 14.67C1.6 14.82 1.55 15.09 1.67 15.31L3.81 19.02C3.93 19.24 4.2 19.33 4.43 19.24L6.95 18.23C7.47 18.63 8.04 18.96 8.66 19.22L9.04 21.9C9.08 22.14 9.28 22.32 9.52 22.32H13.8C14.04 22.32 14.25 22.14 14.29 21.9L14.67 19.22C15.29 18.96 15.86 18.62 16.38 18.23L18.9 19.24C19.13 19.33 19.4 19.24 19.52 19.02L21.66 15.31C21.78 15.09 21.73 14.82 21.54 14.67L19.4 13ZM12 16.5C9.51 16.5 7.5 14.49 7.5 12C7.5 9.51 9.51 7.5 12 7.5C14.49 7.5 16.5 9.51 16.5 12C16.5 14.49 14.49 16.5 12 16.5Z" fill="#FFFFFF"/>
+                </svg>
+                <div class="logo-text">
+                    <span class="brand-title">TEHNO ROOM</span>
+                    <span class="brand-sub">SERVICE</span>
+                </div>
             </div>
+            <a href="tel:+37360114478" class="phone-link">
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="#FFD400"><path d="M6.62 10.79c1.44 2.83 3.76 5.14 6.59 6.59l2.2-2.2c.27-.27.67-.36 1.02-.24 1.12.37 2.33.57 3.57.57.55 0 1 .45 1 1V20c0 .55-.45 1-1 1-9.39 0-17-7.61-17-17 0-.55.45-1 1-1h3.5c.55 0 1 .45 1 1 0 1.25.2 2.45.57 3.57.11.35.03.74-.25 1.02l-2.2 2.2z"/></svg>
+                <span>060 114 478</span>
+            </a>
+        </div>
+    </header>
 
-            <div class="hero-text">
-
-                <h1>
-                    Ремонт крупной<br>
-                    бытовой техники
-                    <span>в Кишинёве и области</span>
+    <!-- HERO / ПЕРВЫЙ ЭКРАН -->
+    <section class="hero">
+        <div class="container hero-grid">
+            <div class="hero-content">
+                <h1 class="hero-title">
+                    РЕМОНТ<br>
+                    <span class="highlight">КРУПНОЙ БЫТОВОЙ ТЕХНИКИ</span>
                 </h1>
+                <p class="hero-subtitle">Быстро. Честно. С гарантией.</p>
 
-                <p>
-                    Профессиональный ремонт с выездом
-                    мастера на дом.
-                    Гарантия до 2 лет.
-                    Работаем ежедневно с 09:00 до 20:00.
-                </p>
+                <ul class="hero-list">
+                    <li>
+                        <span class="icon-wrap">📍</span>
+                        <span>Выезд на дом по Кишиневу и за пределы</span>
+                    </li>
+                    <li>
+                        <span class="icon-wrap">👤</span>
+                        <span>Опытные мастера с большим стажем</span>
+                    </li>
+                    <li>
+                        <span class="icon-wrap">✔️</span>
+                        <span>Ремонт любой сложности</span>
+                    </li>
+                    <li>
+                        <span class="icon-wrap">🛡️</span>
+                        <span>Гарантия до 2 лет на все работы</span>
+                    </li>
+                </ul>
 
                 <div class="hero-buttons">
-
-                    <a href="tel:+37360114478" class="btn-yellow">
-                        📞 Позвонить
+                    <a href="tel:+37360114478" class="btn btn-yellow">
+                        <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor"><path d="M6.62 10.79c1.44 2.83 3.76 5.14 6.59 6.59l2.2-2.2c.27-.27.67-.36 1.02-.24 1.12.37 2.33.57 3.57.57.55 0 1 .45 1 1V20c0 .55-.45 1-1 1-9.39 0-17-7.61-17-17 0-.55.45-1 1-1h3.5c.55 0 1 .45 1 1 0 1.25.2 2.45.57 3.57.11.35.03.74-.25 1.02l-2.2 2.2z"/></svg>
+                        <span>ПОЗВОНИТЬ<br><strong>060 114 478</strong></span>
                     </a>
-
-                    <a href="https://wa.me/37360114478"
-                       class="btn-green">
-                        💬 Написать в WhatsApp
+                    <a href="https://wa.me/37360114478" target="_blank" class="btn btn-outline">
+                        <svg width="22" height="22" viewBox="0 0 24 24" fill="currentColor"><path d="M12.04 2c-5.46 0-9.91 4.45-9.91 9.91 0 1.75.46 3.45 1.32 4.95L2.05 22l5.25-1.38c1.45.79 3.08 1.21 4.74 1.21 5.46 0 9.91-4.45 9.91-9.91 0-2.65-1.03-5.14-2.9-7.01A9.816 9.816 0 0 0 12.04 2zm.01 16.5c-1.48 0-2.93-.4-4.2-1.15l-.3-.18-3.12.82.83-3.04-.2-.32a8.188 8.188 0 0 1-1.26-4.38c0-4.54 3.7-8.24 8.24-8.24 2.2 0 4.27.86 5.82 2.42a8.183 8.183 0 0 1 2.41 5.83c0 4.54-3.7 8.24-8.22 8.24z"/></svg>
+                        <span>WHATSAPP</span>
                     </a>
-
                 </div>
-
-                <div class="hero-benefits">
-
-                    <div>
-                        <strong>✓</strong>
-                        <span>Опытный<br>мастер</span>
-                    </div>
-
-                    <div>
-                        <strong>✓</strong>
-                        <span>Честные<br>цены</span>
-                    </div>
-
-                    <div>
-                        <strong>✓</strong>
-                        <span>Качественные<br>запчасти</span>
-                    </div>
-
-                </div>
-
             </div>
 
+            <div class="hero-image-wrap">
+                <!-- Картинка бытовой техники -->
+                <img src="images/banner.jpg" alt="Ремонт бытовой техники" class="hero-image" onerror="this.src='https://images.unsplash.com/photo-1584622650111-993a426fbf0a?auto=format&fit=crop&w=1000&q=80'">
+            </div>
         </div>
-
-    </div>
-
-</section>
-
-</div>
-
-</header>
-
-<section class="services">
-
-<div class="container">
-
-<h2>
-
-Наши услуги
-
-</h2>
-
-<p class="subtitle">
-
-Ремонтируем бытовую технику любых брендов
-
-</p>
-
-<div class="cards">
-<div class="service-card">
-
-<img src="images/washing.jpg" alt="Ремонт стиральных машин">
-
-<h3>
-Ремонт стиральных машин в Кишиневе 
-</h3>
-
-<p>
-Диагностика и ремонт стиральных машин любых марок.
-</p>
-
-</div>
-
-
-<div class="service-card">
-
-<img src="images/dishwasher.jpg" alt="Ремонт посудомоечных машин">
-
-<h3>
-Ремонт посудомоечных машин в Кишиневе 
-<h3>
-
-<p>
-Устраняем любые неисправности быстро и качественно.
-</p>
-
-</div>
-
-
-<div class="service-card">
-
-<img src="images/dryer.jpg" alt="Ремонт сушильных машин">
-
-<h3>
-Ремонт сушильных машин в Кишиневе 
-</h3>
-
-<p>
-Ремонт и обслуживание бытовой техники.
-</p>
-
-</div>
-
-
-<div class="service-card">
-
-<img src="images/oven.jpg" alt="Ремонт духовых шкафов">
-
-<h3>
-Ремонт духовок в Кишиневе 
-</h3>
-
-<p>
-Ремонт электрических духовок и нагревательных элементов.
-</p>
-
-</div>
-
-
-<div class="service-card">
-
-<img src="images/hob.jpg" alt="Ремонт варочных панелей">
-
-<h3>
-Варочные панели
-</h3>
-
-<p>
-Ремонт электрических и индукционных панелей.
-</p>
-
-</div>
-
-
-<div class="service-card">
-
-<img src="images/boiler.jpg" alt="Ремонт бойлеров">
-
-<h3>
-Бойлеры
-</h3>
-
-<p>
-Диагностика и ремонт водонагревателей.
-</p>
-
-</div>
-
-</div>
-
-</div>
-
-</section>
-
-
-
-<section class="advantages">
-
-<div class="container">
-
-<h2>
-Почему выбирают нас
-</h2>
-
-
-<div class="advantages-grid">
-
-
-<div>
-<h3>🛠 Опыт</h3>
-<p>
-Качественный ремонт бытовой техники.
-</p>
-</div>
-
-
-<div>
-<h3>🚗 Выезд</h3>
-<p>
-Работаем по Кишинёву и области.
-</p>
-</div>
-
-
-<div>
-<h3>🛡 Гарантия</h3>
-<p>
-Предоставляем гарантию до 2 лет.
-</p>
-</div>
-
-
-<div>
-<h3>⏰ График</h3>
-<p>
-Каждый день с 09:00 до 20:00.
-</p>
-</div>
-
-
-</div>
-
-</div>
-
-</section>
-
-
-
-<section class="steps">
-
-<div class="container">
-
-<h2>
-Как мы работаем
-</h2>
-
-
-<div class="step-list">
-
-<div>
-<span>1</span>
-<p>
-Вы оставляете заявку
-</p>
-</div>
-
-
-<div>
-<span>2</span>
-<p>
-Мастер приезжает на диагностику
-</p>
-</div>
-
-
-<div>
-<span>3</span>
-<p>
-Выполняем ремонт
-</p>
-</div>
-
-
-<div>
-<span>4</span>
-<p>
-Вы получаете гарантию
-</p>
-</div>
-
-
-</div>
-
-</div>
-
-</section>
-<section class="contact">
-
-<div class="container">
-
-<h2>
-Свяжитесь с нами
-</h2>
-
-<p>
-Нужен ремонт бытовой техники?
-Оставьте заявку — мастер свяжется с вами.
-</p>
-
-
-<div class="contact-box">
-
-<p>
-📞 Телефон:
-<a href="tel:+37360114478">
-+373 601 14478
-</a>
-</p>
-
-
-<p>
-💬 WhatsApp:
-<a href="https://wa.me/37360114478">
-Написать сообщение
-</a>
-</p>
-
-
-<p>
-📍 Работаем:
-Кишинёв и область
-</p>
-
-
-<p>
-🕘 График:
-Ежедневно 09:00–20:00
-</p>
-
-
-</div>
-
-
-<a href="tel:+37360114478" class="main-button">
-
-Вызвать мастера
-
-</a>
-
-
-</div>
-
-</section>
-
-
-
-<footer>
-
-<div class="container">
-
-<p>
-© 2026 TEHNO ROOM SERVICE
-</p>
-
-<p>
-Ремонт крупной бытовой техники в Кишинёве и области
-</p>
-
-</div>
-
-</footer>
-
+    </section>
+
+    <!-- УСЛУГИ -->
+    <section class="services" id="services">
+        <div class="container">
+            <h2 class="section-title">Наши услуги</h2>
+            <p class="section-subtitle">Обслуживание и профессиональный ремонт бытовой техники</p>
+
+            <div class="cards-grid">
+                <div class="card">
+                    <div class="card-icon">🧼</div>
+                    <h3>Стиральные машины</h3>
+                    <p>Замена подшипников, ТЭНа, насосов и устранение протечек.</p>
+                </div>
+                <div class="card">
+                    <div class="card-icon">🍽️</div>
+                    <h3>Посудомоечные машины</h3>
+                    <p>Устранение засоров, ремонт электроники, замена помпы.</p>
+                </div>
+                <div class="card">
+                    <div class="card-icon">💨</div>
+                    <h3>Сушильные машины</h3>
+                    <p>Чистка фильтров, ремонт нагревателей и датчиков влажности.</p>
+                </div>
+                <div class="card">
+                    <div class="card-icon">🍳</div>
+                    <h3>Духовые шкафы</h3>
+                    <p>Замена нагревательных элементов, переключателей, термостатов.</p>
+                </div>
+                <div class="card">
+                    <div class="card-icon">⚡</div>
+                    <h3>Варочные панели</h3>
+                    <p>Ремонт индукционных и электрических поверхностей любого бренда.</p>
+                </div>
+                <div class="card">
+                    <div class="card-icon">🔥</div>
+                    <h3>Водонагреватели</h3>
+                    <p>Чистка от накипи, замена анода, ТЭНа и диагностика электрики.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ЭТАПЫ РАБОТЫ -->
+    <section class="steps">
+        <div class="container">
+            <h2 class="section-title">Как мы работаем</h2>
+            <div class="steps-grid">
+                <div class="step-card">
+                    <div class="step-number">01</div>
+                    <h4>Заявка</h4>
+                    <p>Вы звоните нам или пишете в WhatsApp</p>
+                </div>
+                <div class="step-card">
+                    <div class="step-number">02</div>
+                    <h4>Выезд и Диагностика</h4>
+                    <p>Мастер приезжает и выявляет причину поломки</p>
+                </div>
+                <div class="step-card">
+                    <div class="step-number">03</div>
+                    <h4>Ремонт</h4>
+                    <p>Согласовываем цену и сразу устраняем проблему</p>
+                </div>
+                <div class="step-card">
+                    <div class="step-number">04</div>
+                    <h4>Гарантия</h4>
+                    <p>Проверяем работу и выдаем гарантию до 2 лет</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- КОНТАКТЫ -->
+    <section class="contact">
+        <div class="container">
+            <div class="contact-box">
+                <h2>Нужен срочный ремонт?</h2>
+                <p>Мастер готов выехать к вам уже сегодня!</p>
+                <div class="contact-buttons">
+                    <a href="tel:+37360114478" class="btn btn-yellow">Вызвать мастера: 060 114 478</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ПОДВАЛ -->
+    <footer class="footer">
+        <div class="container">
+            <p>© 2026 TEHNO ROOM SERVICE. Все права защищены.</p>
+        </div>
+    </footer>
+
+</body>
+</html>
