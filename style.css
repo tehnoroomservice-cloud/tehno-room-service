@@ -1321,3 +1321,20 @@ nav a:hover {
 .hero-content {
     max-width: 850px;
 }
+/* ===== HERO CLEAN FIX ===== */
+
+@media (max-width: 600px) {
+    .hero {
+        background-image: linear-gradient(
+            rgba(0,0,0,0.96),
+            rgba(0,0,0,0.98)
+        ) !important;
+
+        min-height: auto;
+        padding: 55px 0 70px;
+    }
+
+    .hero-logo {
+        display: none !important;
+    }
+}
