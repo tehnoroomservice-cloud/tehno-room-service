@@ -1399,3 +1399,41 @@ nav a:hover {
     }
 
 }
+/* ===== FINAL MOBILE HERO FIX ===== */
+
+@media (max-width: 600px) {
+
+    section.hero {
+        display: block !important;
+        height: auto !important;
+        min-height: unset !important;
+        max-height: none !important;
+        padding: 35px 0 35px !important;
+        margin: 0 !important;
+    }
+
+    .hero-content {
+        height: auto !important;
+        min-height: unset !important;
+        max-height: none !important;
+        padding: 0 !important;
+        margin: 0 auto !important;
+    }
+
+    .hero-text {
+        height: auto !important;
+        min-height: unset !important;
+        margin: 0 !important;
+    }
+
+    .hero-benefits {
+        margin-top: 25px !important;
+        margin-bottom: 0 !important;
+        gap: 10px !important;
+    }
+
+    .hero-benefits div {
+        margin: 0 !important;
+    }
+
+}
