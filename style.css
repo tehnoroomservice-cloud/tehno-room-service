@@ -1378,3 +1378,24 @@ nav a:hover {
     }
 
 }
+/* ===== FINAL HERO HEIGHT FIX ===== */
+
+@media (max-width: 600px) {
+
+    .hero {
+        height: auto !important;
+        min-height: 0 !important;
+        max-height: none !important;
+        padding: 45px 0 50px !important;
+    }
+
+    .hero-content {
+        height: auto !important;
+        min-height: 0 !important;
+    }
+
+    .hero-benefits {
+        margin-bottom: 0 !important;
+    }
+
+}
