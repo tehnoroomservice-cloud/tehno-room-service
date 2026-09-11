@@ -59,6 +59,7 @@ nav {
     align-items: center;
     justify-content: space-between;
     gap: 50px;
+    padding-top: 60px;
 }
 
 .hero-logo {
